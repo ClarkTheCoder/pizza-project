@@ -9,7 +9,9 @@ function Footer() {
   //     alert("We are currently closed");
   //   }
   return (
-    <footer>{new Date().toLocaleDateString()} We're currently open</footer>
+    <footer className="footer">
+      {new Date().toLocaleDateString()} We're currently open
+    </footer>
   );
 }
 export default Footer;

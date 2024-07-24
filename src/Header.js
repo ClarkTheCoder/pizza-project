@@ -1,5 +1,9 @@
 function Header() {
-  return <h2>Pizza</h2>;
+  return (
+    <header className="header">
+      <h1>Second Slice</h1>
+    </header>
+  );
 }
 
 export default Header;
