@@ -59,8 +59,6 @@ const pizzaData = [
 // }
 
 function Pizza(props) {
-  console.log(props);
-
   return (
     <li className="pizza">
       <img src={props.pizzaObject.photoName} alt={props.pizzaObject.name} />

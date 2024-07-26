@@ -2,15 +2,15 @@ function Footer() {
   const hour = new Date().getHours();
   const openHour = 12;
   const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
 
-  // if (hour >= openHour && hour <= closeHour) {
-  //   alert("We're currently open");
-  // } else {
-  //   alert("We are currently closed");
-  // }
   return (
     <footer className="footer">
-      {new Date().toLocaleDateString()} We're currently open
+      {isOpen && (
+        <p>
+          We're open until {closeHour}:00 - Come visit us, or order online.{" "}
+        </p>
+      )}
     </footer>
   );
 }
